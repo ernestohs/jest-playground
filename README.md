@@ -1,2 +1,5 @@
 # jest-playground
-Simple repository to learn Jest 
+
+`$ npm install`
+
+`$npm run test`
