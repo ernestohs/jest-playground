@@ -7,7 +7,12 @@ module.exports = class Arrays {
    *
    * @param {array} arr
    */
-  constructor(arr) {}
+  constructor(arr) {
+    this._array = [];
+    if (Array.isArray(arr)) {
+      this._array = [...arr];
+    }
+  }
   /***
    * @method add(item, [index])
    * @returns Array
@@ -27,7 +32,20 @@ module.exports = class Arrays {
    *
    */
   add(item, index) {
-    throw new Error("Not Implemented");
+    if (index) {
+      if (this._array.length - 1 < index) {
+        this._array.length = index;
+      }
+
+      this._array.splice(index, 0, item);
+    } else {
+      if (Array.isArray(item)) {
+        this._array.push(...item);
+      } else {
+        this._array.push(item);
+      }
+    }
+    return this;
   }
   /***
    * @method at(index, [loop] = false)
