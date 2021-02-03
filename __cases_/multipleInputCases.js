@@ -1,11 +1,11 @@
 const multipleInputCases = [
   {
     type: "array",
-    dataset: [
-      [1, 2, 3, 4],
-      [12, 13, 14],
-      [20, 21, 22],
-    ],
+    dataset: {
+      "initial":[1, 2, 3, 4],
+      "firstInput":[12, 13, 14],
+      "secondInput":[20, 21, 22],
+    },
     expected: [1, 2, 3, 4, 12, 13, 14, 20, 21, 22],
   },
   {

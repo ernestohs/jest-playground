@@ -1,7 +1,7 @@
 const Arrays = require("../src/arrays");
-const { addAtIndexCases } = require("./addAtIndexCases");
-const { multipleInputCases } = require("./multipleInputCases");
-const { singleCases } = require("./singleCases");
+const { addAtIndexCases } = require("../__cases_/addAtIndexCases");
+const { multipleInputCases } = require("../__cases_/multipleInputCases");
+const { singleCases } = require("../__cases_/singleCases");
 describe("Arrays", () => {
   /**
    * Adds item to the array and returns the result as a new array.
@@ -11,9 +11,9 @@ describe("Arrays", () => {
   describe("Add method", () => {
     multipleInputCases.forEach(function (testCase) {
       it(`should add a ${testCase.type} into an array more than once`, () => {
-        let target = new Arrays(testCase.dataset[0]);
-        let result = target.add(testCase.dataset[1]);
-        result = result.add(testCase.dataset[2]);
+        let target = new Arrays(testCase.initial);
+        let result = target.add(testCase.firstInput);
+        result = result.add(testCase.secondInput);
         expect(result._array).toEqual(testCase.expected);
       });
     });
