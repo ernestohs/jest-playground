@@ -20,8 +20,8 @@ describe("Arrays", () => {
 
     singleCases.forEach(function (testCase) {
       it("should add a value to the seed array", () => {
-        let target = new Arrays(testCase.dataset[0]);
-        let result = target.add(testCase.dataset[1]);
+        let target = new Arrays(testCase.initial);
+        let result = target.add(testCase.input);
         expect(result._array).toEqual(testCase.expected);
       });
     });
