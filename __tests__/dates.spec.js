@@ -17,8 +17,29 @@ describe("Dates", () => {
 
   describe("Add method", () => {
     it("should be able to add days to a date", () => {
-      let result = target.add(7, "days");
-      expect(result).toBe("2021-02-10T00:00");
+      const today = new Date();
+      let sevenDaysFromNow = new Date(today.setDate(today.getDate() + 7));
+
+      let result_string = target.add(7, "days");
+      let result = new Date(result_string);
+      expect(result.getDate()).toBe(sevenDaysFromNow.getDate());
+    });
+    it("should be able to add months to a date", () => {
+      const today = new Date();
+      let sevenMontsFromNow = new Date(today.setMonth((today.getMonth() + 1 ) + 7));
+
+      let result_string = target.add(7, "month");
+      let result = new Date(result_string);
+      expect(result.getMonth()).toBe(sevenMontsFromNow.getMonth());
+    });
+    
+    it("should be able to add years to a date", () => {
+      const today = new Date();
+      let sevenYearsFromNow = new Date(today.setYear(today.getFullYear() + 7));
+
+      let result_string = target.add(7, "years");
+      let result = new Date(result_string);
+      expect(result.getFullYear()).toBe(sevenYearsFromNow.getFullYear());
     });
   });
 });
