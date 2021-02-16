@@ -93,7 +93,7 @@ describe("Numbers", () => {
       //Alberto
       let target = new Numbers(13904);
       let result = target.toText();
-      expect(result).toBe('thirteen thousand and nine hundred and four');
+      expect(result).toBe('thirteen thousand nine hundred four');
     });
     it('should convert NaN input to ""', () =>{
       // Luis
