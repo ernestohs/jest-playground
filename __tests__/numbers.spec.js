@@ -107,6 +107,138 @@ describe("Numbers", () => {
       let result = target.toText();
       expect(result).toBe('negative one');
     });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one quadrillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one quintillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one sextillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one septillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one octillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one nonillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one decillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one undecillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one duodecillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one tredecillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1000000000000000000000000000000000000000000000);
+      let result = target.toText();
+      expect(result).toBe('one quattuordecillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10');
+      let result = target.toText();
+      expect(result).toBe('ten');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10^1');
+      let result = target.toText();
+      expect(result).toBe('ten');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10^2');
+      let result = target.toText();
+      expect(result).toBe('one hundred');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10^3');
+      let result = target.toText();
+      expect(result).toBe('one thousand');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10^9');
+      let result = target.toText();
+      expect(result).toBe('one billion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers('10^12');
+      let result = target.toText();
+      expect(result).toBe('one trillion');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(1.1);
+      let result = target.toText();
+      expect(result).toBe('one point one');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(10.1);
+      let result = target.toText();
+      expect(result).toBe('ten point one');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(10.10);
+      let result = target.toText();
+      expect(result).toBe('ten point one');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(10.100000000000);
+      let result = target.toText();
+      expect(result).toBe('ten point one');
+    });
+    it('should convert a number to human readable text', () =>{
+      //Alberto
+      let target = new Numbers(10.11);
+      let result = target.toText();
+      expect(result).toBe('ten point eleven');
+    });
   });
 
 });
